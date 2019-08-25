@@ -1,11 +1,11 @@
 type Verification {
-    id: Int!
-    target: String!
-    payload: String!
-    key: String!
-    used: Boolean!
-    createAt: String!
-    updateAt: String
+  id: Int!
+  target: String!
+  payload: String!
+  key: String!
+  verified: Boolean!
+  createAt: String!
+  updateAt: String
 }
 
 # v = Verification
