@@ -9,8 +9,8 @@ const mailGunClient = new MailGun({
 
 const sendEmail = (subject: string, html: string) => {
   const emailData = {
-    from: "show3rg@gmail.com",
-    to: "show3rg@gmail.com",
+    from: "zzoon.dev@gmail.com",
+    to: "zzoon.dev@gmail.com",
     subject,
     html
   };

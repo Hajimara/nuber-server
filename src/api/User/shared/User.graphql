@@ -16,6 +16,7 @@ type User {
   messages: [Message]
   ridesAsPassenger: [Ride]
   ridesAsDriver: [Ride]
+  places:[Place]
   isDriving: Boolean!
   isRiding: Boolean!
   isTaken: Boolean!
@@ -28,3 +29,8 @@ type User {
 type Query {
   user: User
 }
+
+# 이번에는 장소를 추가하는 type과 Mutation을 정의할 차례다. 
+# 한 사람은 여러 장소를 가질 수 있다. 
+# 주소가 같은 장소래도 사용자마다 독립적으로 가지는 형태인거 같다. 
+# 기존에는 장소와 유저와의 관계가 없었기 때문에 추가한다.
