@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const crateJWT = (id: number): string => {
+const createJWT = (id: number): string => {
   const token = jwt.sign(
     {
       id
@@ -10,4 +10,4 @@ const crateJWT = (id: number): string => {
   return token;
 };
 
-export default crateJWT;
+export default createJWT;

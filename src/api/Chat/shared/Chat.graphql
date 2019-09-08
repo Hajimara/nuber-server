@@ -1,8 +1,13 @@
 type Chat {
-    id: Int!
-    messages: [Message]!
-    participants: [User]!
-    createAt: String!
-    updateAt: String
+  id: Int!
+  messages: [Message]!
+  passenger: User!
+  passengerId: Int!
+  driver: User!
+  driverId: Int!
+  ride: Ride!
+  rideId: Int
+  createAt: String!
+  updateAt: String
 }
 # [] graphql에서 배열표시
